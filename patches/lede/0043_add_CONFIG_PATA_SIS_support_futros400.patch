@@ -1,0 +1,37 @@
+From 8900ca9482e317f0787ab7135df1a8cff1ce0e2b Mon Sep 17 00:00:00 2001
+From: Flip <philippe@pilarkto.net>
+Date: Tue, 24 Oct 2017 13:15:14 +0200
+Subject: [PATCH] add CONFIG_PATA_SIS (support Futro S400)
+
+---
+ target/linux/x86/64/config-default      | 1 +
+ target/linux/x86/generic/config-default | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/target/linux/x86/64/config-default b/target/linux/x86/64/config-default
+index 70838df407..ad114fe3f3 100644
+--- a/target/linux/x86/64/config-default
++++ b/target/linux/x86/64/config-default
+@@ -246,6 +246,7 @@ CONFIG_PATA_MPIIX=y
+ CONFIG_PATA_OLDPIIX=y
+ CONFIG_PATA_PLATFORM=y
+ CONFIG_PATA_VIA=y
++CONFIG_PATA_SIS=y
+ CONFIG_PCIEAER=y
+ CONFIG_PCIEPORTBUS=y
+ CONFIG_PCIE_PME=y
+diff --git a/target/linux/x86/generic/config-default b/target/linux/x86/generic/config-default
+index fa430cfc08..82d6f59cf0 100644
+--- a/target/linux/x86/generic/config-default
++++ b/target/linux/x86/generic/config-default
+@@ -252,6 +252,7 @@ CONFIG_PATA_OLDPIIX=y
+ CONFIG_PATA_PLATFORM=y
+ CONFIG_PATA_SC1200=y
+ CONFIG_PATA_VIA=y
++CONFIG_PATA_SIS=y
+ CONFIG_PCIEAER=y
+ CONFIG_PCIEPORTBUS=y
+ CONFIG_PCIE_PME=y
+-- 
+2.11.0
+
